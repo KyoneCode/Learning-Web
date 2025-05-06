@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #040417;  
+    min-height: 100vh;
+}
+/* NAV */
+nav{
+    position: sticky; 
+    top: 0;
+    background-color: hsla(240, 70%, 5%, 0.8);
+    backdrop-filter: blur(65px);
+    -webkit-backdrop-filter: blur(65px);
+    font-size: 25px;
+    z-index: 10;
+    margin-inline: auto;
+}
+
+
+nav ul{
+    list-style-type: none;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    color: white;
+    font-family: Cascadia Code;
+}
+
+nav a{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+nav a:hover{
+    color: yellowgreen;
+    transform: translateY(-10px);
+    transition-delay: 50ms;
+}   
+nav a:active {
+    background-color: #98b499;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.mainnav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+/* Header */
+.box{
+    background-color: rgb(181, 200, 218);
+    border-radius:0.5cm;
+}
+.Grid{
+    justify-content: center;
+    margin-top: 2rem;
+    display: grid;
+    grid-auto-columns: 250px;
+    grid-auto-rows: 250px;
+    gap : 1em;
+    grid-template-areas: 
+    "b1 b1 b2 b3"
+    "b1 b1 b2 b3"
+    "b1 b1 b4 b4";
+}
+
+@media(max-width: 56em){
+    .Grid{
+        grid-auto-columns: 200px;
+        grid-auto-rows: 200px;
+        grid-template-areas: 
+        "b4 b4 b2"
+        "b1 b1 b2"
+        "b1 b1 b3"
+        "b1 b1 b3";
+    }
+}
+
+@media(max-width: 42em){
+    .Grid{
+        grid-auto-columns: 200px;
+        grid-auto-rows: 200px;
+        grid-template-areas: 
+        "b1 b1"
+        "b1 b1"
+        "b1 b1"
+        "b2 b3"
+        "b2 b3"
+        "b4 b4";
+    }
+    
+    .nav_link {
+        font-size: 14px;
+    }
+
+    .nav_title{
+        font-size: 20px;
+    }
+
+    
+
+}
+/* Grid1 */
+
+/* Grid2 */
+
+/* Grid3 */
+
+/* Grid4 */
+#box4{
+    background-image: url("radio.png");
+    background-position:123px -60px;
+    background-size:450px;
+    background-repeat: no-repeat;
+}
+#audio{
+    padding: 1rem;
+    justify-items : center;
+}
+/* Teks */
+.Teks1{
+    color: white;
+    font-family: Cascadia Code;
+}
+.Teks2{
+    color: rgb(0, 0, 0);
+    font-family: Cascadia Code;
+}
+.PortoHub{
+    color: rgb(255, 0, 0);
+    font-family: Cascadia Code;
+}
+a:link{
+    color: #9933FF;
+}
+a:visited{
+    color: #9933FF;
+}
