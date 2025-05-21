@@ -70,7 +70,7 @@ nav a:active {
     "b1 b1 b4 b4";
 }
 
-@media(max-width: 56em){
+@media(max-width: 66em){
     .Grid{
         grid-auto-columns: 200px;
         grid-auto-rows: 200px;
@@ -96,13 +96,29 @@ nav a:active {
     }
     
     .nav_link {
-        font-size: 14px;
-    }
-
-    .nav_title{
         font-size: 20px;
     }
 
+    .nav_title{
+        font-size: 30px;
+    }
+
+    
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    .mainnav ul {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    nav a {
+        padding: 10px 8px;
+    }
     
 
 }
