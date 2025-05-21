@@ -59,7 +59,7 @@ nav a:active {
     border-radius:0.5cm;
     border-width : 3px;
     border-style: solid;
-    border-color: rgb(31, 73, 109);
+    border-color: rgb(38, 23, 80);
 }
 
 .MainGrid{
@@ -76,6 +76,7 @@ nav a:active {
     "Bento"
     "Contact";
 }
+
 
 .Grid{
     justify-content: center;
