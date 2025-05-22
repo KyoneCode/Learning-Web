@@ -52,7 +52,19 @@ nav a:active {
     display: flex;
     justify-content: flex-end;
 }
-/* Header */
+/* Data */
+.Foto{
+    display: flex;
+    margin:auto;
+    margin-top: 1rem;
+    width: 370px;
+    border-radius: 0.5cm;
+}
+/* .teksData{ */
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+/* } */
+/* Bento  */
 .box{
     background-color: hsla(240, 70%, 5%, 0.8);
     backdrop-filter: blur(65px);
@@ -65,7 +77,7 @@ nav a:active {
 .MainGrid{
     display: grid;
     grid-template-columns: 1fr;      /* 1 kolom */
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; /* 3 baris */
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr; /* 3 baris */
     gap: 1em;
     margin: 3rem;
 
@@ -77,7 +89,14 @@ nav a:active {
     "Contact";
 }
 
-
+#Data{
+    max-width: 73em;
+    max-height: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 400px;
+    min-height: 400px;
+}
 .Grid{
     justify-content: center;
     margin-top: 2rem;
@@ -150,9 +169,51 @@ nav a:active {
     
     nav a {
         padding: 10px 8px;
+    }    
+}
+
+@media(max-width: 27em){
+    .MainGrid{
+        margin: 0rem;
+    }
+    .Grid{
+        grid-auto-columns: 200px;
+        grid-auto-rows: 200px;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        grid-template-areas: 
+        "b1 b1"
+        "b1 b1"
+        "b1 b1"
+        "b2 b3"
+        "b2 b3"
+        "b4 b4";
     }
     
+    .nav_link {
+        font-size: 20px;
+    }
 
+    .nav_title{
+        font-size: 30px;
+    }
+
+    
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    .mainnav ul {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    nav a {
+        padding: 10px 8px;
+    }    
 }
 /* Grid1 */
 
@@ -175,6 +236,10 @@ nav a:active {
 .Teks1{
     color: white;
     font-family: Cascadia Code;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 .Teks2{
     color: rgb(0, 0, 0);
@@ -185,8 +250,8 @@ nav a:active {
     font-family: Cascadia Code;
 }
 a:link{
-    color: #9933FF;
+    color: #a144ff;
 }
 a:visited{
-    color: #9933FF;
+    color: #a144ff;
 }
