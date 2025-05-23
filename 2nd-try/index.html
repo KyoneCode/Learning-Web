@@ -45,8 +45,11 @@
                 <!-- Data -->
                 <div id = "Data", class = "box", style="grid-area: Data;">
                     <img class = "Foto", src = "foto.jpg">
-                    <p class = "Teks1", id = teksData> anjay</p>
+                    <p class = "Teks1", id = "TitleData"> Hi👋, I'm Hadyan Kholish Prasetio.</p>
+                    <br>
+                    <p class = "Teks3", id = "teksData">I am a CompSci student at Diponegoro University. I am interested in ...</p>
                 </div>
+
                 <!-- Bento -->
                 <div id = "Bento", class = "box", style="grid-area: Bento;">
                     <div class = "Grid">
@@ -63,7 +66,7 @@
                             <div id = audio>
                                 <p class ="Teks1">Pstt.. Try playing this music as you go by 😉</p>
                                 <br>
-                                <audio controls loop autoplay style="width:250px;height:20px">
+                                <audio controls loop autoplay style="width:250px;height:20px" onloadeddata="this.volume=0.2">
                                     <source src="Girl From Petaluma (Rhythmic) - Ben White.mp3">
                                     This browser does not support mp3 files
                                 </audio>

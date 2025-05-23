@@ -90,7 +90,7 @@ nav a:active {
 }
 
 #Data{
-    max-width: 73em;
+    max-width: 22.88em;
     max-height: 1fr;
     margin-left: auto;
     margin-right: auto;
@@ -113,6 +113,7 @@ nav a:active {
     "b1 b1 b4 b4";
 }
 
+
 @media(max-width: 73em){
     .MainGrid{
         margin: 1rem;
@@ -127,10 +128,15 @@ nav a:active {
         "b1 b1 b3";
     }
 }
-
-@media(max-width: 42em){
+/* RESPONSIF HP */
+@media(max-width: 42em){        
     .MainGrid{
         margin: 0.0rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #Data{
+    max-width: 19.3em;
     }
     .Grid{
         grid-auto-columns: 150px;
@@ -151,6 +157,11 @@ nav a:active {
     margin-left: 0.3rem;
     margin-right: 0.3rem;
     width: 300px;
+    /* max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges; */
     }
     .nav_link {
         font-size: 14px;
@@ -185,6 +196,20 @@ nav a:active {
     nav a {
         padding: 10px 8px;
     }
+    .Teks1{
+        color: white;
+        font-family: Cascadia Code;
+        font-size: 14px;
+    }
+    .Teks2{
+        color: rgb(0, 0, 0);
+        font-family: Cascadia Code;
+    }
+    .Teks3{
+        color: white;
+        font-family: Cascadia Code;
+        font-size: 12px
+    }
 }
 
 
@@ -200,6 +225,7 @@ nav a:active {
     background-position:123px -60px;
     background-size:450px;
     background-repeat: no-repeat;
+    font-size: 13px;
 }
 #audio{
     padding: 1rem;
@@ -209,14 +235,22 @@ nav a:active {
 .Teks1{
     color: white;
     font-family: Cascadia Code;
-    padding-left: 1em;
-    padding-right: 1em;
+    font-size: 15;
+    padding: 1em;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0;
 }
 .Teks2{
     color: rgb(0, 0, 0);
     font-family: Cascadia Code;
+}
+.Teks3{
+    color: white;
+    font-family: Cascadia Code;
+    font-size: 13;
+    padding: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .PortoHub{
     color: rgb(255, 0, 0);
