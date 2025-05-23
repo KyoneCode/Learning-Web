@@ -5,6 +5,9 @@
 body{
     background: linear-gradient(160deg, #040417, #3e1566, #040417, #5e219b);  
     min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 /* NAV */
 nav{
@@ -41,12 +44,11 @@ nav a:hover{
     transition-delay: 50ms;
 }   
 nav a:active {
-    background-color: #98b499;
+    background-color: #242b24;
 }
 .navBar{
     display: flex;
     justify-content: space-between;
-    /* margin-top: 15px; */
 }
 .mainnav ul {
     display: flex;
@@ -55,15 +57,13 @@ nav a:active {
 /* Data */
 .Foto{
     display: flex;
-    margin:auto;
     margin-top: 1rem;
-    width: 370px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: 350px;
     border-radius: 0.5cm;
 }
-/* .teksData{ */
-    /* margin-left: 10px; */
-    /* margin-right: 10px; */
-/* } */
+
 /* Bento  */
 .box{
     background-color: hsla(240, 70%, 5%, 0.8);
@@ -94,8 +94,8 @@ nav a:active {
     max-height: 1fr;
     margin-left: auto;
     margin-right: auto;
-    min-width: 400px;
-    min-height: 400px;
+    /* min-width: 400px;
+    min-height: 400px; */
 }
 .Grid{
     justify-content: center;
@@ -130,11 +130,11 @@ nav a:active {
 
 @media(max-width: 42em){
     .MainGrid{
-        margin: 0.5rem;
+        margin: 0.0rem;
     }
     .Grid{
-        grid-auto-columns: 200px;
-        grid-auto-rows: 200px;
+        grid-auto-columns: 150px;
+        grid-auto-rows: 150px;
         margin-top: 0.2rem;
         margin-bottom: 0.2rem;
         grid-template-areas: 
@@ -145,76 +145,49 @@ nav a:active {
         "b2 b3"
         "b4 b4";
     }
-    
+    .Foto{
+    display: flex;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    width: 300px;
+    }
     .nav_link {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .nav_title{
-        font-size: 30px;
+        font-size: 25px;
     }
 
-    
     .navBar {
         flex-direction: column;
         align-items: center;
+        width: 100%;
         padding: 10px 0;
     }
-    
-    .mainnav ul {
-        justify-content: center;
+    .titnav, .mainnav {
         width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .titnav ul, .mainnav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    .mainnav ul {
         margin-top: 10px;
     }
-    
+
     nav a {
         padding: 10px 8px;
-    }    
+    }
 }
 
-@media(max-width: 27em){
-    .MainGrid{
-        margin: 0rem;
-    }
-    .Grid{
-        grid-auto-columns: 200px;
-        grid-auto-rows: 200px;
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-        grid-template-areas: 
-        "b1 b1"
-        "b1 b1"
-        "b1 b1"
-        "b2 b3"
-        "b2 b3"
-        "b4 b4";
-    }
-    
-    .nav_link {
-        font-size: 20px;
-    }
 
-    .nav_title{
-        font-size: 30px;
-    }
-
-    
-    .navBar {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-    }
-    
-    .mainnav ul {
-        justify-content: center;
-        width: 100%;
-        margin-top: 10px;
-    }
-    
-    nav a {
-        padding: 10px 8px;
-    }    
-}
 /* Grid1 */
 
 /* Grid2 */
