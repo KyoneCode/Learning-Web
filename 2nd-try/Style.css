@@ -1,6 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 body{
     background: linear-gradient(160deg, #040417, #3e1566, #040417, #5e219b);  
@@ -16,7 +20,7 @@ nav{
     background-color: hsla(240, 70%, 5%, 0.8);
     backdrop-filter: blur(65px);
     -webkit-backdrop-filter: blur(65px);
-    font-size: 25px;
+    font-size: 	1.5625rem;
     z-index: 10;
 }
 
@@ -90,7 +94,7 @@ nav a:active {
 }
 
 #Data{
-    max-width: 22.88em;
+    max-width: 23.2em;
     max-height: 1fr;
     margin-left: auto;
     margin-right: auto;
@@ -136,7 +140,7 @@ nav a:active {
         margin-bottom: 1rem;
     }
     #Data{
-    max-width: 19.3em;
+    max-width: 19.7em;
     }
     .Grid{
         grid-auto-columns: 150px;
@@ -164,11 +168,11 @@ nav a:active {
     image-rendering: crisp-edges; */
     }
     .nav_link {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .nav_title{
-        font-size: 25px;
+        font-size: 	1.5625rem;
     }
 
     .navBar {
@@ -199,7 +203,7 @@ nav a:active {
     .Teks1{
         color: white;
         font-family: Cascadia Code;
-        font-size: 14px;
+        font-size: 	0.875rem;
     }
     .Teks2{
         color: rgb(0, 0, 0);
@@ -208,7 +212,7 @@ nav a:active {
     .Teks3{
         color: white;
         font-family: Cascadia Code;
-        font-size: 12px
+        font-size: 	0.75rem;
     }
 }
 
@@ -225,7 +229,7 @@ nav a:active {
     background-position:123px -60px;
     background-size:450px;
     background-repeat: no-repeat;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 #audio{
     padding: 1rem;
@@ -235,9 +239,8 @@ nav a:active {
 .Teks1{
     color: white;
     font-family: Cascadia Code;
-    font-size: 15;
-    padding: 1em;
-    padding-top: 1em;
+    font-size: 	1.5625rem;
+    padding: 10px;
     padding-bottom: 0;
 }
 .Teks2{
@@ -247,8 +250,8 @@ nav a:active {
 .Teks3{
     color: white;
     font-family: Cascadia Code;
-    font-size: 13;
-    padding: 1em;
+    font-size: 0.8125rem;
+    padding: 10px;
     padding-top: 0;
     padding-bottom: 0;
 }
